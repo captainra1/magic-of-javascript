@@ -1,0 +1,45 @@
+body{
+    background-image:url("image/bg1.jpg");
+}
+h1{
+    text-align: center;
+}
+.all_key{
+    align-items: center;
+    margin-top:230px;
+}
+.key{
+    border: 1px solid black;
+    height:80px;
+    width:96px;
+    float:left;
+    margin:5px;
+    text-align: center;
+    border-radius: 3px;
+    font-size:32px;
+    opacity:0.8;
+    background-color: cadetblue;
+    transition: all 0.07s ease;
+}
+.effect{
+    transform:scale(1.1);
+    border-width:4px;
+    border-radius: 35px;
+    border-color: darkorange;
+}
+    
+span{
+    font-size:14px;
+    color: darksalmon;
+}
+kbd{
+    display:block;
+    
+}
+footer{
+    
+    background-position:bottom right;
+    position:absolute;
+    bottom:3px;
+    margin-left: 900px;
+}
