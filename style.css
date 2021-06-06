@@ -1,0 +1,212 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+      background-color: aquamarine;
+ 
+}
+.main{
+    position:relative;
+    width:100vw;
+    height:100vh;
+    background-image: linear-gradient(to bottom right,rgb(236, 168, 42),rgb(226, 184, 106),rgb(233, 134, 116),rgb(255, 192, 203));
+}
+.lap-base{
+    width:16vw;
+    height:12px;
+    background-color:gray;
+    border:2px solid black;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+    left: 23vw;
+    top:55vh;
+    position:absolute;
+    color:black;
+}
+.lap-base::before{
+    content:" ";
+    height:14vh;
+    width:15vw;
+    border: 2px solid black;
+    border-radius:3px;
+    background-image:linear-gradient(to bottom right,rgb(114, 114, 218),skyblue,rgb(168, 205, 214),violet,violet);
+    position:absolute;
+    top:-15.1vh;
+    left:.25vw;
+}
+.mouse{
+    position:absolute;
+    left:41vw;
+    top:50.5vh;
+    width:2.3vw;
+    height:6.1vh;
+    background-color: grey;
+    border-bottom-left-radius:100%20px;
+    border-bottom-right-radius:100%20px;
+    border:2px solid black;
+    border-top-left-radius:100%50px;
+    border-top-right-radius:100%50px;
+}
+.mouse::before{
+    content:" ";
+    position:absolute;
+    width:0.5vw;
+    height:1vh;
+    background-color: black;
+    top:2vh;
+    left:.7vw;
+    border-radius:1vh;
+}
+.cpu{
+    top:34.8vh;
+    left:45vw;
+    width:8vw;
+    height:22vh;
+    background-color: grey;
+    position:absolute;
+    border:2px solid black;
+    border-radius: 5px;
+    color:black;
+    font-weight: bolder;
+
+}
+.cpu::before{
+    position:absolute;
+    content:" ";
+    width:1vw;
+    height: 1vh;
+    border:1px solid black;
+    top:11.5vh;
+    left:1.5vw;
+    z-index:1;
+}
+.cpu::after{
+    position:absolute;
+    content:" ";
+    width:1vw;
+    height: 1vh;
+    border:1px solid black;
+    left:4.8vw;
+    top:11.5vh;
+    z-index:1;
+}
+.moniter{
+    position:absolute;
+    top:55vh;
+    left:60vw;
+    width:4.6vw;
+    height:1.8vh;
+    background-color: black;
+    border-top-left-radius:100%20px;
+    border-top-right-radius:100%20px;
+}
+.moniter::before{
+    content:" ";
+    height:14vh;
+    width:15vw;
+    border: 2px solid black;
+    border-radius:3px;
+    background-image: radial-gradient(rgb(250, 222, 61),orange,tomato);
+    
+    position:absolute;
+    top:-17.1vh;
+    left:-5.2vw;
+
+}
+.moniter::after{
+    content:" ";
+    left:1.3vw;
+    top:-2.5vh;
+    width:2vw;
+    height:2.6vh;
+    position:absolute;
+    background-color: black;
+}
+.base-line{
+   position:absolute;
+   top:57vh;
+   width:52vw;
+   height:.7vh;
+   background-color: black;
+   left:20vw;
+   border-radius: 5px;
+}
+.window{
+    position:absolute;
+    top:20vh;
+    right:13vw;
+    width:11vw;
+    height:12vh;
+    background-color: thistle;
+    border:2px solid black;
+    border-radius: 4px;
+}
+.window::before{
+    content:" ";
+    position:absolute;
+    width:5vw;
+    height:9vh;
+    right:2.8vw;
+    top:1.2vh;
+    background-color: rgb(238, 174, 90);
+    border:2px solid black;
+    border-radius:100%;
+    box-shadow:-5px 0 6px yellow, 5px 0 6px yellow,0 -5px 6px yellow,
+               0 5px 6px yellow;
+    z-index:1;
+}
+.scenery{
+    position:absolute;
+    top:11vh;
+    left:20vw;
+    width:12vw;
+    height:15vh;
+    background-image:url("./scenery.png");
+    border:2px solid black;
+    border-radius: 5px;
+}
+.scenery::before{
+    content:" ";
+    position:absolute;
+    width:.5vw;
+    height:1vh;
+    top:-1.5vh;
+    left:5.5vw;
+    background-color: black;
+    border-radius: 1vw;
+}
+.intro{
+    position:absolute;
+    top:70vh;
+    left:35vw;
+    color:lightpink;
+    text-align: center;
+    justify-content: center;
+    font-size:32px;
+    z-index:3;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Reggae One', cursive;
+    text-shadow: 3px 3px 3px red;
+}
+.navbar{
+    position:fixed;
+    top:0;
+    width:100vw;
+    height:6vh;
+    background-color: rgb(245, 150, 106);
+}
+.navbar-list{
+    display:flex;
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+}
+li{
+    padding:5px 25px;
+    font-size: 24px;
+}
+li:hover{
+    background-color: red;
+}
